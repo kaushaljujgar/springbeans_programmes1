@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="com.jspiders.hibernatespr1.beans.Customer" name="customer1">
+<property name="id" value="1"/>
+<property name="name" value="Rahul"/>
+<property name="email" value="rahul@gmail.com"/>
+<property name="products">
+<list>
+
+<bean class="com.jspiders.hibernatespr1.beans.Product" name="product1">
+<property name="id" value="1"/>
+<property name="name" value="shooes"/>
+<property name="category" value="footwear"/>
+
+</bean>
+
+<bean class="com.jspiders.hibernatespr1.beans.Product" name="product2">
+<property name="id" value="2"/>
+<property name="name" value="bat"/>
+<property name="category" value="sport"/>
+
+</bean>
+
+<bean class="com.jspiders.hibernatespr1.beans.Product" name="product3">
+<property name="id" value="3"/>
+<property name="name" value="jacket"/>
+<property name="category" value="cloth"/>
+
+</bean>
+
+
+</list>
+
+</property>
+
+</bean>
+
+
+<bean class="com.jspiders.hibernatespr1.beans.Customer" name="customer2">
+<property name="id" value="2"/>
+<property name="name" value="Rohini"/>
+<property name="email" value="rohini@gmail.com"></property>
+<property name="products">
+<list>
+
+<bean class="com.jspiders.hibernatespr1.beans.Product" name="product1">
+<property name="id" value="1"/>
+<property name="name" value="shooes"/>
+<property name="category" value="footwear"/>
+
+</bean>
+
+<bean class="com.jspiders.hibernatespr1.beans.Product" name="product3">
+<property name="id" value="3"/>
+<property name="name" value="jacket"/>
+<property name="category" value="cloth"/>
+
+</bean>
+
+
+</list>
+
+</property>
+
+</bean>
+
+
+
+</beans>
